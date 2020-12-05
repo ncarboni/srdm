@@ -15,15 +15,15 @@ rm -rf *.csv ;
 unzip -q script.zip
 rm -rf __MACOSX
 
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shr0rCcH3WTVw8j1V > biblio_name.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrJT1mV5apfyLLSE > biblio_parthood.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shru5eYarAAs2nqZh > biblio_existence.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shr93bPQvD6kEVOcz > biblio_substance.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrlV7ExEJ41leKX7 > biblio_aboutness.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrmFYFwLyfyjZG67 > biblio_actor_relations.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrQI42azhgdPehgU > biblio_item.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrPnM3lhBGsv2sAW > biblio_description.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrIGrpYAgIW07Ilr > biblio_documentation.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shr0rCcH3WTVw8j1V > biblio_name.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrJT1mV5apfyLLSE > biblio_parthood.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shru5eYarAAs2nqZh > biblio_existence.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shr93bPQvD6kEVOcz > biblio_substance.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrlV7ExEJ41leKX7 > biblio_aboutness.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrmFYFwLyfyjZG67 > biblio_actor_relations.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrQI42azhgdPehgU > biblio_item.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrPnM3lhBGsv2sAW > biblio_description.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrIGrpYAgIW07Ilr > biblio_documentation.csv ;
 echo "finished download"
 ./csvcut.sh
 cd ttl/

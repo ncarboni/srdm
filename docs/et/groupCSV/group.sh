@@ -16,15 +16,15 @@ rm -rf *.csv ;
 unzip -q script.zip
 rm -rf __MACOSX
 
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrf9F2GMwTX3vYBb > group_name.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrsxdo5t5toMYrq1 > group_parthood.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrxhEBchScpl9XOZ > group_existence.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shr6HVAMMMidoy4T2 > group_events.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shr6ohx53hq6vGMef > group_actor_relations.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shr4u4X1hAolKfpER > group_works.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrbmW1Y0Y5E7xZ2x > group_location.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrVelnT9iSNNYy7n > group_description.csv ;
-python ../airscraper/airscraper/airscraper/airscraper.pyhttps://airtable.com/shrmLls7kh3tHorRA > group_documentation.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrf9F2GMwTX3vYBb > group_name.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrsxdo5t5toMYrq1 > group_parthood.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrxhEBchScpl9XOZ > group_existence.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shr6HVAMMMidoy4T2 > group_events.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shr6ohx53hq6vGMef > group_actor_relations.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shr4u4X1hAolKfpER > group_works.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrbmW1Y0Y5E7xZ2x > group_location.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrVelnT9iSNNYy7n > group_description.csv ;
+python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrmLls7kh3tHorRA > group_documentation.csv ;
 echo "finished download"
 ./csvcut.sh
 cd ttl/
