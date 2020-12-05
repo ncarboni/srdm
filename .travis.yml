@@ -33,14 +33,6 @@ script:
 - git clone https://github.com/banditelol/airscraper.git docs/et/airscraper/airscraper
 - cd docs/et/artworkCSV
 - bash artwork.sh
-- bash csvcut.sh
-- cd ttl/
-- bash turtle.sh
-- bash criteria.sh
-- cd mmd/
-- bash mmd.sh
-- cd png/
-- bash rename_png.sh
 
 after_success:
 - git config user.name "Nicola Carboni"

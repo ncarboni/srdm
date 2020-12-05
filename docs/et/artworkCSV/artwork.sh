@@ -28,15 +28,15 @@ python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/sh
 python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shr0LgomaG22z3frW > Artwork_Documentation.csv ;
 
 echo "finished download"
-# ./csvcut.sh
-# cd ttl/
-# ./turtle.sh
-# echo "converted to RDF"
-# ./criteria.sh
-# echo "converted to Mermaid"
-# cd mmd/
-# ./mmd.sh
-# echo "converted to PNG"
-# cd png/
-# ./rename_png.sh
-# echo "done"
+./csvcut.sh
+cd ttl/
+./turtle.sh
+echo "converted to RDF"
+./criteria.sh
+echo "converted to Mermaid"
+cd mmd/
+./mmd.sh
+echo "converted to PNG"
+cd png/
+./rename_png.sh
+echo "done"
