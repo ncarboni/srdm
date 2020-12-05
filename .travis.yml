@@ -5,6 +5,8 @@ env:
 
 language: python
 branches: main
+
+
 install:
   
 - pip install markdown
@@ -13,6 +15,7 @@ install:
 - pip install mkdocs-material
 - pip install airscraper
 - pip install rdflib
+- pip install rdflib-jsonld
 - pip install csvkit
 - pip install requests
 - pip install beautifulsoup4
@@ -30,6 +33,14 @@ script:
 - git clone https://github.com/banditelol/airscraper.git docs/et/airscraper/airscraper
 - cd docs/et/artworkCSV
 - bash artwork.sh
+- bash csvcut.sh
+- cd ttl/
+- bash turtle.sh
+- bash criteria.sh
+- cd mmd/
+- bash mmd.sh
+- cd png/
+- bash rename_png.sh
 
 after_success:
 - git config user.name "Nicola Carboni"
@@ -46,3 +57,9 @@ deploy:
   keep_history: true
   on:
     branch: master
+
+addons:
+  apt:
+    update: true
+    packages:
+    - rename
