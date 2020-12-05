@@ -9,7 +9,7 @@ for file in *.mmd ; do
 	bname=$(basename "$file" .png)
     saveName="${saveDir}/${bname}.png"
 
-    docker run -v ${PWD}:/mnt/mmd minlag/mermaid-cli -i /mnt/mmd/"$file" -o "$saveName" -s 2
+    docker run -v ${PWD}:/mnt/mmd minlag/mermaid-cli -i /mnt/mmd/"$file" -o "$saveName" -s 3
     
 done
 
