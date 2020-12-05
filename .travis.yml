@@ -7,11 +7,7 @@ language: python
 branches: main
 
 
-before_install:
-  - apt update
-  - apt install npm
-  - npm install @mermaid-js/mermaid-cli
-  - ./node_modules/.bin/mmdc -h
+
 
 install:
   
@@ -28,6 +24,8 @@ install:
 - pip install mkdocs-macros-plugin
 - pip install mkdocs-git-revision-date-localized-plugin
 - pip install mkdocs-table-reader-plugin
+- npm install @mermaid-js/mermaid-cli
+- ./node_modules/.bin/mmdc -h
 - git clone https://github.com/g-provost/lightgallery-markdown.git
 - cd lightgallery-markdown
 - python setup.py install
@@ -55,3 +53,9 @@ after_success:
 #   keep_history: true
 #   on:
 #     branch: main
+
+addons:
+   apt:
+     update: true
+     packages:
+     - npm 
