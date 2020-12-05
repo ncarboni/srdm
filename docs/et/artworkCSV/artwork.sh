@@ -14,6 +14,7 @@ rm rm  *.csv ;
 
 unzip -q script.zip
 rm -rf __MACOSX
+
 python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrPgJopfdzS8TRjU > Artwork_Name.csv ;
 python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shr1BUAc0k7CMGOPR > Artwork_Parthood.csv ;
 python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shr6LEceTYqarh60o > Artwork_Existence.csv ;
@@ -25,6 +26,7 @@ python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/sh
 python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shrnv4u11sMVs3T8M > Artwork_Location.csv ;
 python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shr6WRc5RLgfooJfM > Artwork_Description.csv ;
 python ../airscraper/airscraper/airscraper/airscraper.py https://airtable.com/shr0LgomaG22z3frW > Artwork_Documentation.csv ;
+
 echo "finished download"
 ./csvcut.sh
 cd ttl/
