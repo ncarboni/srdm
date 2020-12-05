@@ -6,11 +6,12 @@ env:
 language: python
 branches: main
 
-services:
-  - docker
 
 before_install:
-  - docker pull minlag/mermaid-cli
+  - apt update
+  - apt install npm
+  - npm install @mermaid-js/mermaid-cli
+  - ./node_modules/.bin/mmdc -h
 
 install:
   
@@ -46,11 +47,11 @@ after_success:
 - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
 - mkdocs gh-deploy -v --clean --remote-name gh-token;
 
-deploy:
-  provider: pages
-## skip_cleanup is now default in deployment-v2 - https://docs.travis-ci.com/user/deployment-v2
-#  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-  on:
-    branch: main
+# deploy:
+#   provider: pages
+# ## skip_cleanup is now default in deployment-v2 - https://docs.travis-ci.com/user/deployment-v2
+# #  skip_cleanup: true
+#   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+#   keep_history: true
+#   on:
+#     branch: main
