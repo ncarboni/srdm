@@ -62,7 +62,7 @@ theme:
 plugins:
   - table-reader
   - git-revision-date-localized
-  - tooltipster-links
+#  - tooltipster-links
 #  - mermaid2
 #  - pheasant
 #  - macros
@@ -81,7 +81,7 @@ markdown_extensions:
   - lightgallery
   - pymdownx.mark
   - markdown.extensions.attr_list
-  - pymdownx.superfences:
+  - pymdownx.superfences
       # make exceptions to highlighting of code:
 #      custom_fences:
 #        - name: mermaid

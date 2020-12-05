@@ -40,6 +40,21 @@ script:
 - git clone https://github.com/banditelol/airscraper.git docs/et/airscraper/airscraper
 - cd docs/et/artworkCSV
 - bash artwork.sh
+- cd ../biblioCSV
+- bash biblio.sh
+- cd ../builtWorkCSV
+- bash built_work.sh
+- cd ../doCSV
+- bash do.sh
+- cd ../eventCSV
+- bash event.sh
+- cd ../groupCSV
+- bash group.sh
+- cd ../personCSV
+- bash person.sh
+- cd ../placeCSV
+- bash place.sh
+
 
 after_success:
 - git config user.name "Nicola Carboni"
