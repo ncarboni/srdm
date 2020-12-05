@@ -1,20 +1,10 @@
-#env:
-#  global:
-#    - secure: hruo9K42RCNB4BV/uPzKw7iLMsq9OxWwcpbJi0KPkpcHM6zgoxiyESAmo2YYR7A3HSXq1ewFN3nrLRRzw+J25nn0ZifZjmbO6RawguQDyeDKlMdXnabvz3mx0k4rL/mkHIQEuDWGyrwuLfUFmBs5TucNIDLy0Oxt2jwRWQspPB76VMFcOLmNc+mnchwcjONH4MB2cBXFX/b+6EXIvLT3ERIcaL5zfMeCQKlpxjpTFv+gZnrZoQ+cXFThIsxCs1Zk6CPFCHqbQipe3iIaY9qPILtd3JH1lH9Z19gGUxCSxcMO7F18IVf8uAs3EExX8M9HRji5Jyrz+aJEMnEG4Z2B7CE68HPkmxLRaUcAYVer5NMQqVAkKrdghe1dHbvLYXXDsTbIPwsyCDXusctzdOBj1Xf85gYOnEWgZUMRhzF3DtZR4/2nRdfLhOPsa4820OJooShBrBrCihnEKJV7ioFhYBdv70BNoGcBGq1kT21DJRP+FfO7g46Hz2ak9RLBRtEYkpfMUNph3fgsu6gM6YoyCJIUsDXrld6AxDDIOAA9zMQ9q/vaf+oGwpC82Oi3B0WE+p15DE0p9uo0i8kdox6jDDVRRIntTozs6dCTmXIJe1vjU0i6bbHAB6usC36OUeIkSxA2DaFBXt/jiG5ChTvgdUPlcjjXEKECG2ybakPVCTw=
-
-
 language: python
 branches: main
-
 services:
-   - docker
-
+- docker
 before_install:
-   - docker pull minlag/mermaid-cli
-
-
+- docker pull minlag/mermaid-cli
 install:
-  
 - pip install markdown
 - pip install pymdown-extensions
 - pip install mkdocs
@@ -33,7 +23,6 @@ install:
 - cd lightgallery-markdown
 - python setup.py install
 - cd ..
-
 script:
 - git clean -f -d -x
 - git clone https://github.com/chin-rcip/CRITERIA.git docs/et/CRITERIA
@@ -56,23 +45,20 @@ script:
 - bash place.sh
 - cd ../../../
 
-
-after_success:
+after_script:
 - git config user.name "Nicola Carboni"
 - git config user.email "nicola@carboni.me"
 - git remote add gh-token "https://${GITHUB_TOKEN}@github.com/ncarboni/srdm.git";
 - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
 - mkdocs gh-deploy -v --clean --remote-name gh-token;
 
-deploy:
-  provider: pages
-# ## skip_cleanup is now default in deployment-v2 - https://docs.travis-ci.com/user/deployment-v2
-# #  skip_cleanup: true
-  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-  keep_history: true
-    # Git branch on which it should deploy (master, gh-pages, foo...)
-  target_branch: gh-pages
-
-  on:
-    branch: main
-
+#deploy:
+#  provider: pages
+#  github_token: "$GITHUB_TOKEN"
+#  keep_history: true
+#  target_branch: gh-pages
+#  on:
+#    branch: main
+env:
+  global:
+    secure: H8EOEY8ikBfnkgQNHQGN0wIMTbO6yUpDf+YE6sXI/PykJpjNL8t/h+1c/uUc6TnfoFO5uFrE+Ff19AF797fBGdCAcT+QRLAYyQk4gmYBdJlfguhZ1mQmQg21Gf0NIWq/9SkYKAd2zKyWFLyMjAx0W+EWON/Qn6VKPCcYAbEydovH2+8HEqah6hJrnWqTuMLiQT/h3+NOMiWE+MX3mhW1qt1OMtLMJa83qMENUjcDmL7vzwHrm34pSdukfe1GV8554OBeNhuK/vDaSgpCj/OgOQQlNF1CmWwcYflrsyEcDk21UqrUI6YUZAwH7CPaq2I/76S7gNHD7xyOWZQMcDalrH4LmsRz3rh5aqsHeDRZ9fiIHtvOpwnpvQnvetK7zGkSK11v7SPvqItZHUIf3BFOahlj2Bbh/8Zvrs2UPyREN3pSFl6G6RKYDV37H5ryKH/jvaDhOvT95S5fEoW/fNurW2JmXSh+u6z00x79euNIA06aJfkfsaLjXd6xNKiuxOOzTU6jLKxf9/fvlyQcAux48BR2zqpmKakf2hr1uCgJaaC1nYyvvUeVbIJsxeFKButOXSzu0DWxvgLgw4zlmwTM9I5nNkFMpDAK2T+nyrsNNeekIn4NKxecZD1WlF0AVraITkE738cBmAVLeb/iZX1PtaAmCGqHGmp9/afrZpHkrHw=
