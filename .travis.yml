@@ -57,9 +57,3 @@ deploy:
   keep_history: true
   on:
     branch: master
-
-addons:
-  apt:
-    update: true
-    packages:
-    - rename
