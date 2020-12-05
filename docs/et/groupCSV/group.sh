@@ -10,7 +10,7 @@ rm -rf rename_png.sh ;
 rm -rf src/ ;
 rm -rf turtle.sh ;
 rm -rf ttl/ ;
-rm rm  *.csv ;
+rm -rf *.csv ;
 
 
 unzip -q script.zip

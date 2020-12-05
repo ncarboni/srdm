@@ -4,9 +4,9 @@ env:
 
 
 language: python
-python: 3.6
 branches: main
 install:
+  
 - pip install markdown
 - pip install pymdown-extensions
 - pip install mkdocs
