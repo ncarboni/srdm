@@ -6,7 +6,11 @@ env:
 language: python
 branches: main
 
+services:
+   - docker
 
+ before_install:
+   - docker pull minlag/mermaid-cli
 
 
 install:
@@ -18,13 +22,13 @@ install:
 - pip install airscraper
 - pip install rdflib
 - pip install rdflib-jsonld
+- pip install mkdocs-tooltipster-links-plugin
 - pip install csvkit
 - pip install requests
 - pip install beautifulsoup4
 - pip install mkdocs-macros-plugin
 - pip install mkdocs-git-revision-date-localized-plugin
 - pip install mkdocs-table-reader-plugin
-- npm install @mermaid-js/mermaid-cli
 - git clone https://github.com/g-provost/lightgallery-markdown.git
 - cd lightgallery-markdown
 - python setup.py install
@@ -53,8 +57,3 @@ after_success:
 #   on:
 #     branch: main
 
-addons:
-   apt:
-     update: true
-     packages:
-     - npm 
