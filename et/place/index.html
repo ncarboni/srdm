@@ -687,21 +687,21 @@
 <td align="left">place_17_type</td>
 <td align="left">Type</td>
 <td align="left">This field is used to record the formal type of the documented object.</td>
-<td align="left">&rarr; P2 &rarr; E55[11]</td>
+<td align="left">&rarr; P2 &rarr; E55[17_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_18_type_start_-_date</td>
 <td align="left">Type - Start Date</td>
 <td align="left">This field is used to record the earliest date the formal type indicated to hold for the documented object is believed to have held.</td>
-<td align="left">&rarr; P41i&rarr; E17[12] &rarr; P4&rarr; E52[13] &rarr; P82a&rarr; xsd:dateTime</td>
+<td align="left">&rarr; P41i&rarr; E17[18_1] &rarr; P42&rarr; E55[17_1]<br><br>&rarr; P41i&rarr; E17[18_1] &rarr; P4&rarr; E52[18_2] &rarr; P82a&rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_19_type_-_end_date</td>
 <td align="left">Type - End Date</td>
 <td align="left">This field is used to record the latest date the formal type indicated to hold for the documented object is believed to have held.</td>
-<td align="left">&rarr; P41i&rarr; E17[12] &rarr; P4&rarr; E52[7] &rarr; P82b&rarr; xsd:dateTime</td>
+<td align="left">&rarr; P41i&rarr; E17[18_1] &rarr; P42&rarr; E55[17_1]<br><br>&rarr; P41i&rarr; E17[18_1] &rarr; P4&rarr; E52[18_2] &rarr; P82b&rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
@@ -743,14 +743,14 @@
 <td align="left">place_11_alternative_name_type</td>
 <td align="left">Alternative Name Type</td>
 <td align="left">This field is used to record the type of the alternative name that has been attributed to the documented entity.</td>
-<td align="left">&rarr; P1 &rarr; E33_E41[10_1] &rarr; P2 &rarr; E55</td>
+<td align="left">&rarr; P1 &rarr; E33_E41[10_1] &rarr; P2 &rarr; E55 [11_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_12_alternative_name_language</td>
 <td align="left">Alternative Name Language</td>
 <td align="left">This field is used to record the language of the alternative name attributed to the documented entity.</td>
-<td align="left">&rarr; P1 &rarr; E33_E41[10_1] &rarr; P72 &rarr; E56</td>
+<td align="left">&rarr; P1 &rarr; E33_E41[10_1] &rarr; P72 &rarr; E56 [12_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
@@ -771,14 +771,14 @@
 <td align="left">place_15_alternative_name_-_attributed_by</td>
 <td align="left">Alternative Name - Attributed by</td>
 <td align="left">This field is used to record the organization or individual attributing the alternative name to the documented object.</td>
-<td align="left">&rarr; P141i&rarr; E13[10_1] &rarr; P14 → E39<br><br>&rarr; P141i-→ E13[10_1] &rarr; P141&rarr; E52[13_1]</td>
+<td align="left">&rarr; P1 &rarr; E33_E41[10_1]&rarr; P141i&rarr; E13[15_1] &rarr; P14 → E39 [15_2]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_16_alternative_name_-_source</td>
 <td align="left">Alternative Name - Source</td>
 <td align="left">This field is used to record the source on the basis of which the organization attributing the alternative name use based their attribution.</td>
-<td align="left">&rarr; P141i&rarr; E13[10_1] &rarr; P16&rarr; E73[16_1]<br><br>&rarr; P141i&rarr; E13[10_1] &rarr; P16&rarr; E73[16_1] &rarr; P2&rarr; E55</td>
+<td align="left">&rarr; P1 &rarr; E33_E41[10_1]&rarr; P141i&rarr; E13[15_1] &rarr; P16&rarr; E73[16_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -809,8 +809,10 @@
 
 <span class="nv">&lt;https://www.srdm.org/conceptual_object/fie_4_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E73_Information_Object</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
+<span class="nv">&lt;https://www.srdm.org/event/fie_13_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">frbroo:</span><span class="nt">F52_Name_Use_Activity</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">crm:</span><span class="nt">P4_has_time-span</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/time_span/fie_13_2&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+
 <span class="nv">&lt;https://www.srdm.org/event/fie_15_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E13_Attribute_Assignment</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nn">crm:</span><span class="nt">P140_assigned_attribute_to</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/event/fie_13_1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="nn">crm:</span><span class="nt">P14_carried_out_by</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/actor/fie_15_2&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="nn">crm:</span><span class="nt">P16_used_specific_object</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/conceptual_object/fie_16_1&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
@@ -860,9 +862,6 @@
 
 <span class="nv">&lt;https://www.srdm.org/type/fie_8_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E55_Type</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
-<span class="nv">&lt;https://www.srdm.org/event/fie_13_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">frbroo:</span><span class="nt">F52_Name_Use_Activity</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nn">crm:</span><span class="nt">P4_has_time-span</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/time_span/fie_13_2&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
-
 <span class="nv">&lt;https://www.srdm.org/type/fie_17_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E55_Type</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 </code></pre></div>
 </details>
@@ -883,49 +882,49 @@
 <td align="left">place_188_description</td>
 <td align="left">Description</td>
 <td align="left">This field is used to record a description in free text of the documented object.</td>
-<td align="left">&rarr; P129i-&gt; E33[13] &rarr; P190-&gt;rdf:Literal</td>
+<td align="left">&rarr; P129i-&gt; E33[188_1] &rarr; P190-&gt;rdf:Literal</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_189_description_language</td>
 <td align="left">Description Language</td>
 <td align="left">This field is used to record the language of the description of the documented object.</td>
-<td align="left">&rarr; P129i&rarr; E33[13] &rarr; P72&rarr; E56</td>
+<td align="left">&rarr; P129i&rarr; E33[188_1] &rarr; P72&rarr; E56 [189_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_190_description_type</td>
 <td align="left">Description Type</td>
 <td align="left">This field is used to record the type of description given of the documented object.</td>
-<td align="left">&rarr; P129i&rarr; E33[13] &rarr; P2&rarr; E55</td>
+<td align="left">&rarr; P129i&rarr; E33[188_1] &rarr; P2&rarr; E55 [190_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_191_description_author</td>
 <td align="left">Description Author</td>
 <td align="left">This field is used to record the author of the description given of the documented object.</td>
-<td align="left">&rarr; P129i&rarr;E33[13] &rarr; P94i&rarr;E65[14]&gt;-P14&rarr;E39</td>
+<td align="left">&rarr; P129i&rarr;E33[188_1] &rarr; P94i&rarr;E65[191_1]&gt;-P14&rarr;E39 [191_2]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_192_description_date_-_earliest</td>
 <td align="left">Description Date - Earliest</td>
 <td align="left">This field is used to record the earliest possible date for the creation of the description of the documented object.</td>
-<td align="left">&rarr; P129i&rarr;E33[13] &rarr; P94i&rarr;E65[14] &rarr; P4&rarr;E52[15] &rarr; P82a &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P129i&rarr;E33[188_1] &rarr; P94i&rarr;E65[191_1] &rarr; P4&rarr;E52[191_2] &rarr; P82a &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_193_description_date_-_latest</td>
 <td align="left">Description Date - Latest</td>
 <td align="left">This field is used to record the latest possible date for the creation of the description of the documented object.</td>
-<td align="left">&rarr; P129i&rarr;E33[13] &rarr; P94i&rarr;E65[14] &rarr; P4&rarr;E52[15] &rarr; P82b —&gt; xsd:dateTime</td>
+<td align="left">&rarr; P129i&rarr;E33[188_1] &rarr; P94i&rarr;E65[191_1] &rarr; P4&rarr;E52[191_2] &rarr; P82b —&gt; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_194_description_-_source</td>
 <td align="left">Description - Source</td>
 <td align="left">This field is used to record the source of the description of the documented object.</td>
-<td align="left">&rarr; P129i &rarr; E33[13] &rarr; P94i &rarr; E65[14] &rarr; P16 &rarr; E73</td>
+<td align="left">&rarr; P129i &rarr; E33[188_1] &rarr; P94i &rarr; E65[191_1] &rarr; P16 &rarr; E73 [194_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -978,35 +977,35 @@
 <td align="left">place_35_has_part</td>
 <td align="left">Has Part</td>
 <td align="left">This field is used to record individually documented places which form part of the documented place.</td>
-<td align="left">&rarr; P89i &rarr; E53</td>
+<td align="left">&rarr; P89i &rarr; E53 [35_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_36_is_part_of</td>
 <td align="left">Is Part of</td>
 <td align="left">This field is used to record that the broader place to which the documented place belongs as part.</td>
-<td align="left">&rarr; P89&rarr; E53</td>
+<td align="left">&rarr; P89&rarr; E53 [36_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_42_historically_is_part_of_place</td>
 <td align="left">Historically was Part of Place</td>
 <td align="left">This field is used to record an instance of place that the documented place historically was part of.</td>
-<td align="left">&rarr; P161i &rarr; E4[19] &rarr; P166i&rarr; E93[20] &rarr; P10&rarr; E4[26] &rarr; P161&rarr; E53[32] &rarr; P168 &rarr; geo:wkt</td>
+<td align="left">&rarr; P161i &rarr; E4[42_1] &rarr; P166i&rarr; E93[42_2] &rarr; P10&rarr; E4[42_3] &rarr; P161&rarr; E53[42_4] &rarr; P168 &rarr; geo:wkt</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_45_historically_is_part_of_place_-_earliest_date_time</td>
 <td align="left">Historically was Part of Place - Earliest Date Time</td>
 <td align="left">This field is used to record the earliest date at which the documented place fell within the referred instance of place that it was historically a part of.</td>
-<td align="left">&rarr; P161i&rarr; E4[19] &rarr; P166i&rarr; E93[20] &rarr; P160 &rarr; E52[25] &rarr; P82a&rarr; xsd:dateTime</td>
+<td align="left">&rarr; P161i&rarr; E4[42_1] &rarr; P166i&rarr; E93[42_2] &rarr; P160 &rarr; E52[45_1] &rarr; P82a&rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_46_historically_is_part_of_place_-_latest_date_time</td>
 <td align="left">Historically was Part of Place - Latest Date Time</td>
 <td align="left">This field is used to record the latest date at which the documented place fell within the referred instance of place that it was historically a part of.</td>
-<td align="left">&rarr; P161i &rarr; E4[19] &rarr; P166i&rarr; E93[20] &rarr; P160 &rarr; E52[25] &rarr; P82b &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P161i &rarr; E4[42_1] &rarr; P166i&rarr; E93[42_2] &rarr; P160 &rarr; E52[45_1] &rarr; P82b &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
@@ -1027,7 +1026,7 @@
 <td align="left">place_47_historical_coordinates</td>
 <td align="left">Historical Coordinates</td>
 <td align="left">This field is used to record the historical coordinates of the geographic place to which the occurrence of the documented instance of place is localized..</td>
-<td align="left">&rarr; P161i &rarr; E4[19] &rarr; P166i &rarr; E93[20] &rarr; P161 &rarr; E53[33] &rarr; P168 &rarr; geo:wkt</td>
+<td align="left">&rarr; P161i &rarr; E4[42_1] &rarr; P166i &rarr; E93[42_2] &rarr; P161 &rarr; E53[47_1] &rarr; P168 &rarr; geo:wkt</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -1131,28 +1130,28 @@
 <td align="left">place_195_image</td>
 <td align="left">Image</td>
 <td align="left">This field is used to record a digital image which is representative of the documented object.</td>
-<td align="left">&rarr; P138i &rarr; E36/D9</td>
+<td align="left">&rarr; P138i &rarr; E36/D9 [195_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_196_citation</td>
 <td align="left">Citation</td>
 <td align="left">This field is used to record a citation to reference documentation for the documented object.</td>
-<td align="left">&rarr; P129i &rarr; E33[22] &rarr; rdf:value &rarr; rdf:Literal &rarr; P129i &rarr; E73[22] &rarr; P2 &rarr; E55 "Citation"</td>
+<td align="left">&rarr; P129i &rarr; E33[196_1] &rarr; rdf:value &rarr; rdf:Literal &rarr; P129i &rarr; E73[196_1] &rarr; P2 &rarr; E55 "Citation"</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_197_citation_source</td>
 <td align="left">Citation Source</td>
 <td align="left">This field is used to record the source used for generating the citation for the documented object.</td>
-<td align="left">&rarr; P129i &rarr; E33[22] &rarr; P106i &rarr; E33 [from BibliograPhy Entity Type]</td>
+<td align="left">&rarr; P129i &rarr; E33[196_1] &rarr; P106i &rarr; E33 [from BibliograPhy Entity Type] [197_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">place_204_same_as</td>
 <td align="left">Same As</td>
 <td align="left">The field is used to record the sameness between the entity described and an external authority</td>
-<td align="left">&rarr; L54 &rarr; E1</td>
+<td align="left">&rarr; L54 &rarr; E1 [204_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>

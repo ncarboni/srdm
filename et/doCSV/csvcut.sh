@@ -16,7 +16,7 @@ for file in *.csv ; do
     csvcut -c 6 "$file" > temp && mv temp "$saveName" ;
     csvformat -T  -Q "|" "$saveName" > temp && mv temp "$saveName" ;
 	sed -n 2,1000p "$saveName" > temp && mv temp "$saveName" ;
-	sed -i '' 's/\|//g' "$saveName" ;
+	sed -i -E 's/\|//g' "$saveName" ;
 	mv "$saveName" "${saveName%.csv}.ttl"
 	csvcut -c 1-5 "$file" > temp && mv temp "$file"
 done

@@ -7,4 +7,3 @@
 @prefix sari: <http://w3id.org/sari#> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 
-

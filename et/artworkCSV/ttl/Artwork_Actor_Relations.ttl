@@ -5,7 +5,7 @@
     crm:P108i_was_produced_by <https://www.srdm.org/event/fie_58_1> ;
     crm:P140i_was_attributed_by <https://www.srdm.org/event/fie_139_1> ;
     crm:P2_has_type <http://www.srdm.org/type/artwork> ;
-    crm:P49_has_former_or_current_keeper <https://www.srdm.org/actor/fie_138_1> ;
+    crm:P50_current_keeper <https://www.srdm.org/actor/fie_138_1> ;
     crm:P52_has_current_owner <https://www.srdm.org/actor/fie_137_1> .
 
 <http://www.srdm.org/type/artwork> a crm:E55_type .

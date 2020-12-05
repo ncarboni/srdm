@@ -8,9 +8,6 @@
         <https://www.srdm.org/event/fie_124_1>,
         <https://www.srdm.org/event/fie_128_1> .
 
-<https://www.srdm.org/ttime_span/fie_125_1> a crm:E52_Time-Span ;
-    crm:P82b_end_of_the_end ""^^xsd:dateTime .
-
 <https://www.srdm.org/event/fie_121_1> a frbroo:F51_Pursuit ;
     crm:P2_has_type <https://www.srdm.org/type/fie_121_2> ;
     crm:P4_has_time-span <https://www.srdm.org/time_span/fie_121_3> ;
@@ -35,7 +32,8 @@
     crm:P82b_end_of_the_end ""^^xsd:dateTime .
 
 <https://www.srdm.org/time_span/fie_125_1> a crm:E52_Time-Span ;
-    crm:P82a_begin_of_the_begin ""^^xsd:dateTime .
+    crm:P82a_begin_of_the_begin ""^^xsd:dateTime ;
+    crm:P82b_end_of_the_end ""^^xsd:dateTime .
 
 <https://www.srdm.org/type/fie_121_2> a crm:E55_Type ;
     rdfs:label "Floruit" .

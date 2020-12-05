@@ -9,6 +9,6 @@ mv rename_png.sh mmd/
 for file in *.ttl ; do
 	bname=$(basename "$file" .mmd)
     saveName="${saveDir}/${bname}.mmd"
-    python3 /Users/nicola/Downloads/CRITERIA-master/criteria.py ontology "$file" "$saveName"
+    python3 ../../CRITERIA/criteria.py ontology "$file" "$saveName"
 done
 

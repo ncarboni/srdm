@@ -8,8 +8,8 @@
     crm:P107i_is_current_or_former_member_of <https://www.srdm.org/actor/fie_145_1>,
         <https://www.srdm.org/actor/fie_146_1> ;
     crm:P11i_participated_in <https://www.srdm.org/event/fie_164_1> ;
-    crm:P143_joined <https://www.srdm.org/event/fie_158_1> ;
-    crm:P145_separated <https://www.srdm.org/event/fie_162_1> ;
+    crm:P143i_was_joined_by <https://www.srdm.org/event/fie_158_1> ;
+    crm:P145i_left_by <https://www.srdm.org/event/fie_162_1> ;
     crm:P98i_was_born <https://www.srdm.org/event/fie_73_1> .
 
 <https://www.srdm.org/actor/fie_145_1> a crm:E74_Group ;
@@ -24,9 +24,6 @@
 
 <https://www.srdm.org/actor/fie_156_1> a crm:E21_Person .
 
-<https://www.srdm.org/actor/fie_158_3> a crm:E74_Group ;
-    crm:P2_has_type <https://www.srdm.org/type/fie_158_4> .
-
 <https://www.srdm.org/actor/fie_164_2> a crm:E21_Person .
 
 <https://www.srdm.org/event/fie_158_1> a crm:E85_Joining ;
@@ -34,7 +31,8 @@
     crm:P4_has_time-span <https://www.srdm.org/time_span/fie_160_1> .
 
 <https://www.srdm.org/event/fie_162_1> a crm:E86_Leaving ;
-    crm:P4_has_time-span <https://www.srdm.org/time_span/fie_162_2> .
+    crm:P4_has_time-span <https://www.srdm.org/time_span/fie_162_2> ;
+    crm:p146_separated_from <https://www.srdm.org/actor/fie_158_3> .
 
 <https://www.srdm.org/event/fie_164_1> a crm:E5_Event ;
     crm:P11_had_participant <https://www.srdm.org/actor/fie_164_2> .
@@ -67,9 +65,8 @@
 
 <https://www.srdm.org/type/fie_157_1> a crm:E55_Type .
 
-<https://www.srdm.org/type/fie_158_4> a crm:E55_Type ;
-    rdfs:label "Institution" .
-
 <https://www.srdm.org/type/fie_159_1> a crm:E55_Type ;
     rdfs:label "Position" .
+
+<https://www.srdm.org/actor/fie_158_3> a crm:E74_Group .
 

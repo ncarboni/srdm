@@ -1,5 +1,18 @@
 #! /bin/bash
 
+
+rm -rf criteria.sh ;
+rm -rf csvcut.sh ;
+rm -rf mmd.sh ;
+rm -rf prefixes.txt ;
+rm -rf rename_csv.sh ;
+rm -rf rename_png copy.sh ;
+rm -rf rename_png.sh ;
+rm -rf src/ ;
+rm -rf turtle.sh ;
+rm -rf ttl/ ;
+rm -rf *.csv ;
+
 unzip -q script.zip
 rm -rf __MACOSX
 

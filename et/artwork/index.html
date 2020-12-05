@@ -837,7 +837,7 @@
 <td align="left">artwork_17_type</td>
 <td align="left">Type</td>
 <td align="left">This field is used to indicate the formal type of object an artwork is.</td>
-<td align="left">&rarr; P2 &rarr; E55[11]</td>
+<td align="left">&rarr; P2 &rarr; E55[17_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
@@ -851,14 +851,14 @@
 <td align="left">artwork_11_alternative_name_type</td>
 <td align="left">Alternative Title Type</td>
 <td align="left">This field is used to indicate the type of alternative name that is attributed to the documented artwork.</td>
-<td align="left">&rarr; P1 &rarr; E33_E41[10_1] &rarr; P2 &rarr; E55</td>
+<td align="left">&rarr; P1 &rarr; E33_E41[10_1] &rarr; P2 &rarr; E55 [11_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_12_alternative_name_language</td>
 <td align="left">Alternative Title Language</td>
 <td align="left">This field is used to record the language of the alternative name attributed to the documented artwork.</td>
-<td align="left">&rarr; P1 &rarr; E33_E41[10_1] &rarr; P72 &rarr; E56</td>
+<td align="left">&rarr; P1 &rarr; E33_E41[10_1] &rarr; P72 &rarr; E56 [12_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
@@ -879,7 +879,7 @@
 <td align="left">artwork_15_alternative_name_-_attributed_by</td>
 <td align="left">Alternative Title - Attributed by</td>
 <td align="left">This field is used to record the organization or individual attributing the alternative name to the documented artwork.</td>
-<td align="left">&rarr; P141i&rarr; E13[10_1] &rarr; P14 → E39<br><br>&rarr; P141i-→ E13[10_1] &rarr; P141&rarr; E52[13_1]</td>
+<td align="left">&rarr; P1 &rarr; E33_E41[10_1]&rarr; P141i&rarr; E13[15_1] &rarr; P14 → E39 [15_2]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -911,8 +911,10 @@
 
 <span class="nv">&lt;https://www.srdm.org/conceptual_object/fie_4_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E73_Information_Object</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
+<span class="nv">&lt;https://www.srdm.org/event/fie_13_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">frbroo:</span><span class="nt">F52_Name_Use_Activity</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">crm:</span><span class="nt">P4_has_time-span</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/time_span/fie_13_2&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
+
 <span class="nv">&lt;https://www.srdm.org/event/fie_15_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E13_Attribute_Assignment</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nn">crm:</span><span class="nt">P140_assigned_attribute_to</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/event/fie_13_1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="nn">crm:</span><span class="nt">P14_carried_out_by</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/actor/fie_15_2&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
 <span class="nv">&lt;https://www.srdm.org/event/fie_3_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E15_Identifier_Assignment</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
@@ -947,50 +949,8 @@
 <span class="nv">&lt;https://www.srdm.org/type/fie_11_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E55_Type</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
 <span class="nv">&lt;https://www.srdm.org/type/fie_17_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E55_Type</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
-
-<span class="nv">&lt;https://www.srdm.org/event/fie_13_1&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">frbroo:</span><span class="nt">F52_Name_Use_Activity</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nn">crm:</span><span class="nt">P4_has_time-span</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/time_span/fie_13_2&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 </code></pre></div>
 </details>
-<div class="highlight"><pre><span></span><code>graph TD
-classDef Literal fill:#f2f2f2,stroke:#000000;
-classDef CRM_Entity fill:#FFFFFF,stroke:#000000;
-classDef Temporal_Entity fill:#00C9E6, stroke:#000000;
-classDef Type fill:#E18312, stroke:#000000;
-classDef Time-Span fill:#2C9C91, stroke:#000000;
-classDef Appellation fill:#FFEB7F, stroke:#000000;
-classDef Place fill:#008836, stroke:#000000;
-classDef Persistent_Item fill:#B266B2, stroke:#000000;
-classDef Conceptual_Object fill:#FFD700, stroke:#000000;
-classDef Physical_Thing fill:#D2B48C, stroke:#000000;
-classDef Actor fill:#f58aad, stroke:#000000;
-classDef PC_Classes fill:#4ce600, stroke:#000000;
-classDef Multi fill:#cccccc,stroke:#000000;
-
-0[&quot;crm:E22_Human-Made_Object&quot;]:::Physical_Thing --&gt;|crm:P2_has_type| 1[&quot;crm:E55_type&quot;]:::Default
-2[&quot;crm:E33_E41_Linguistic_Appellation&quot;]:::Default --&gt;|frbroo:R64i_was_name_used_by| 3[&quot;frbroo:F52_Name_Use_Activity&quot;]:::Temporal_Entity
-6[&quot;crm:E42_Identifier&quot;]:::Appellation --&gt;|crm:P37i_was_assigned_by| 7[&quot;crm:E15_Identifier_Assignment&quot;]:::Temporal_Entity
-6[&quot;crm:E42_Identifier&quot;]:::Appellation --&gt;|crm:P2_has_type| 8[&quot;crm:E55_Type&quot;]:::Type
-2[&quot;crm:E33_E41_Linguistic_Appellation&quot;]:::Default --&gt;|crm:p72_has_language| 13[&quot;crm:E56_Language&quot;]:::Type
-0[&quot;crm:E22_Human-Made_Object&quot;]:::Physical_Thing --&gt;|crm:P2_has_type| 9[&quot;crm:E55_Type&quot;]:::Type
-0[&quot;crm:E22_Human-Made_Object&quot;]:::Physical_Thing --&gt;|crm:P1_is_identified_by| 16[&quot;crm:E33_E41_Linguistic_Appellation&quot;]:::Default
-2[&quot;crm:E33_E41_Linguistic_Appellation&quot;]:::Default --&gt;|crm:P190_has_symbolic_content| 19[rdfs:Literal]:::Literal
-2[&quot;crm:E33_E41_Linguistic_Appellation&quot;]:::Default --&gt;|crm:p2_has_type| 22[&quot;crm:E55_Type&quot;]:::Type
-7[&quot;crm:E15_Identifier_Assignment&quot;]:::Temporal_Entity --&gt;|crm:P16_used_specific_object| 11[&quot;crm:E73_Information_Object&quot;]:::Conceptual_Object
-0[&quot;crm:E22_Human-Made_Object&quot;]:::Physical_Thing --&gt;|crm:P1_is_identified_by| 6[&quot;crm:E42_Identifier&quot;]:::Appellation
-16[&quot;crm:E33_E41_Linguistic_Appellation&quot;]:::Default --&gt;|crm:p2_has_type| 24[&quot;crm:E55_Type&quot;]:::Type
-7[&quot;crm:E15_Identifier_Assignment&quot;]:::Temporal_Entity --&gt;|crm:P14_carried_out_by| 26[&quot;crm:E39_Actor&quot;]:::Actor
-27[&quot;crm:E52_Time-Span&quot;]:::Time-Span --&gt;|crm:P82b_end_of_the_end| 28[xsd:dateTime]:::Literal
-4[&quot;crm:E13_Attribute_Assignment&quot;]:::Temporal_Entity --&gt;|crm:P140_assigned_attribute_to| 3[&quot;frbroo:F52_Name_Use_Activity&quot;]:::Temporal_Entity
-3[&quot;frbroo:F52_Name_Use_Activity&quot;]:::Temporal_Entity --&gt;|crm:P4_has_time-span| 27[&quot;crm:E52_Time-Span&quot;]:::Time-Span
-16[&quot;crm:E33_E41_Linguistic_Appellation&quot;]:::Default --&gt;|crm:P190_has_symbolic_content| 31[rdfs:Literal]:::Literal
-6[&quot;crm:E42_Identifier&quot;]:::Appellation --&gt;|crm:P190_has_symbolic_content| 35[rdfs:Literal]:::Literal
-0[&quot;crm:E22_Human-Made_Object&quot;]:::Physical_Thing --&gt;|crm:P1_is_identified_by| 2[&quot;crm:E33_E41_Linguistic_Appellation&quot;]:::Default
-2[&quot;crm:E33_E41_Linguistic_Appellation&quot;]:::Default --&gt;|crm:P141i_was_assigned_by| 4[&quot;crm:E13_Attribute_Assignment&quot;]:::Temporal_Entity
-16[&quot;crm:E33_E41_Linguistic_Appellation&quot;]:::Default --&gt;|crm:p72_has_language| 20[&quot;crm:E56_Language&quot;]:::Type
-27[&quot;crm:E52_Time-Span&quot;]:::Time-Span --&gt;|crm:P82a_begin_of_the_begin| 39[xsd:dateTime]:::Literal
-4[&quot;crm:E13_Attribute_Assignment&quot;]:::Temporal_Entity --&gt;|crm:P14_carried_out_by| 40[&quot;crm:E39_Actor&quot;]:::Actor
-</code></pre></div>
 <h3 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h3>
 <p>Artworks are the subjects of innumerable descriptions that provide a wide range of information with regards to the aesthetic and historical importance of a work, <em>inter alia</em>. Such descriptions are of use in a scholarly understanding of an artwork and its reception just in case we are able to track the provenance of such elocutions in a systematic fashion. Such an aim drives the need for the tracking of description information as a separate category. The descriptors necessary to this task are documented in the table below.</p>
 <table>
@@ -1008,49 +968,49 @@ classDef Multi fill:#cccccc,stroke:#000000;
 <td align="left">artwork_188_description</td>
 <td align="left">Description</td>
 <td align="left">This field is used to indicate a description of documented artwork</td>
-<td align="left">&rarr; P129i-&gt; E33[13] &rarr; P190-&gt;rdf:Literal</td>
+<td align="left">&rarr; P129i-&gt; E33[188_1] &rarr; P190-&gt;rdf:Literal</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_189_description_language</td>
 <td align="left">Description Language</td>
 <td align="left">This field is used to record the language of the description of the documented artwork.</td>
-<td align="left">&rarr; P129i&rarr; E33[13] &rarr; P72&rarr; E56</td>
+<td align="left">&rarr; P129i&rarr; E33[188_1] &rarr; P72&rarr; E56 [189_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_190_description_type</td>
 <td align="left">Description Type</td>
 <td align="left">This field is used to indicate the type of description given of the documented work.</td>
-<td align="left">&rarr; P129i&rarr; E33[13] &rarr; P2&rarr; E55</td>
+<td align="left">&rarr; P129i&rarr; E33[188_1] &rarr; P2&rarr; E55 [190_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_191_description_author</td>
 <td align="left">Description Author</td>
 <td align="left">This field is used to indicate the author of the description given of the documented work.</td>
-<td align="left">&rarr; P129i&rarr;E33[13] &rarr; P94i&rarr;E65[14]&gt;-P14&rarr;E39</td>
+<td align="left">&rarr; P129i&rarr;E33[188_1] &rarr; P94i&rarr;E65[191_1]&gt;-P14&rarr;E39 [191_2]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_192_description_date_-_earliest</td>
 <td align="left">Description Date - Earliest</td>
 <td align="left">This field is used to indicate the ealiest date for the creation of the description of the documented work.</td>
-<td align="left">&rarr; P129i&rarr;E33[13] &rarr; P94i&rarr;E65[14] &rarr; P4&rarr;E52[15] &rarr; P82a &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P129i&rarr;E33[188_1] &rarr; P94i&rarr;E65[191_1] &rarr; P4&rarr;E52[191_2] &rarr; P82a &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_193_description_date_-_latest</td>
 <td align="left">Description Date - Latest</td>
 <td align="left">This field is used to indicate the latest date for the creation of the description of the documented work.</td>
-<td align="left">&rarr; P129i&rarr;E33[13] &rarr; P94i&rarr;E65[14] &rarr; P4&rarr;E52[15] &rarr; P82b —&gt; xsd:dateTime</td>
+<td align="left">&rarr; P129i&rarr;E33[188_1] &rarr; P94i&rarr;E65[191_1] &rarr; P4&rarr;E52[191_2] &rarr; P82b —&gt; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_194_description_-_source</td>
 <td align="left">Description - Source</td>
 <td align="left">This field is used to record the source of the description of the documented artwork.</td>
-<td align="left">&rarr; P129i &rarr; E33[13] &rarr; P94i &rarr; E65[14] &rarr; P16 &rarr; E73</td>
+<td align="left">&rarr; P129i &rarr; E33[188_1] &rarr; P94i &rarr; E65[191_1] &rarr; P16 &rarr; E73 [194_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -1106,14 +1066,14 @@ classDef Multi fill:#cccccc,stroke:#000000;
 <td align="left">artwork_25_has_part</td>
 <td align="left">Has Part</td>
 <td align="left">This field is used to indicate parts of the documented artwork.</td>
-<td align="left">&rarr; P46 &rarr; E22</td>
+<td align="left">&rarr; P46 &rarr; E22 [25_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_26_has_part_type</td>
 <td align="left">Has Part Type</td>
 <td align="left">This field is used to indicate part types for the documented artwork.</td>
-<td align="left">&rarr; P46 &rarr; E22[14] &rarr; P2 &rarr; E55</td>
+<td align="left">&rarr; P46 &rarr; E22[25_1] &rarr; P2 &rarr; E55 [26_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
@@ -1158,56 +1118,56 @@ classDef Multi fill:#cccccc,stroke:#000000;
 <td align="left">artwork_58_production_date_-_earliest</td>
 <td align="left">Production Date - Earliest</td>
 <td align="left">This field is used to indicate the earliest date for the creation of the documented artwork.</td>
-<td align="left">&rarr; P108i &rarr; E12[30] &rarr; P4 &rarr; E52[31] &rarr; P82a &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P108i &rarr; E12[58_1] &rarr; P4 &rarr; E52[58_2] &rarr; P82a &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_59_production_date_-_latest</td>
 <td align="left">Production Date - Latest</td>
 <td align="left">This field is used to indicate the latest date for the creation of the documented artwork.</td>
-<td align="left">&rarr; P108i &rarr; E12[30] &rarr; P4 &rarr; E52[31] &rarr; P82b &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P108i &rarr; E12[58_1] &rarr; P4 &rarr; E52[58_2] &rarr; P82b &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_60_production_location</td>
 <td align="left">Production Location</td>
 <td align="left">This field is used to indicate the place of the creation of the documented artwork.</td>
-<td align="left">&rarr; P108i &rarr; E12[30] &rarr; P7 &rarr; E53</td>
+<td align="left">&rarr; P108i &rarr; E12[58_1] &rarr; P7 &rarr; E53 [60_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_62_destruction_date_-_earliest</td>
 <td align="left">Destruction Date - Earliest</td>
 <td align="left">This field is used to indicate the earliest date for the destruction of the documented artwork.</td>
-<td align="left">&rarr; P13i &rarr; E6[32] &rarr; P4 &rarr; E52[33] &rarr; P82a &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P13i &rarr; E6[62_1] &rarr; P4 &rarr; E52[62_2] &rarr; P82a &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_63_destruction_date_-_latest</td>
 <td align="left">Destruction Date - Latest</td>
 <td align="left">This field is used to indicate the latest date for the destruction of the documented artwork.</td>
-<td align="left">&rarr; P13i &rarr; E6[32] &rarr; P4 &rarr; E52[33] &rarr; P82b &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P13i &rarr; E6[62_1] &rarr; P4 &rarr; E52[62_2] &rarr; P82b &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_64_destruction_location</td>
 <td align="left">Destruction Location</td>
 <td align="left">This field is used to indicate the place of the destruction of the documented artwork.</td>
-<td align="left">&rarr; P13i &rarr; E6[32] &rarr; P7 &rarr; E53</td>
+<td align="left">&rarr; P13i &rarr; E6[62_1] &rarr; P7 &rarr; E53 [64_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_65_destruction_period</td>
 <td align="left">Destruction period</td>
 <td align="left">This field is used to indicate the historical period in which the creation of the documented artwork occured.</td>
-<td align="left">&rarr; P13i &rarr; E6[32] &rarr; P10 &rarr; E4</td>
+<td align="left">&rarr; P13i &rarr; E6[62_1] &rarr; P10 &rarr; E4 [65_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_61_production_period</td>
 <td align="left">Production Period</td>
 <td align="left">This field is used to indicate the historical period in which the creation of the documented artwork occured.</td>
-<td align="left">&rarr; P108i &rarr; E12[30] &rarr; P10 &rarr; E4</td>
+<td align="left">&rarr; P108i &rarr; E12[58_1] &rarr; P10 &rarr; E4 [61_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -1268,35 +1228,35 @@ classDef Multi fill:#cccccc,stroke:#000000;
 <td align="left">artwork_139_style_-_movement</td>
 <td align="left">Style - Movement</td>
 <td align="left">This field is used to record an artistic movement to which the documented artwork is associated because of its style.</td>
-<td align="left">&rarr; P140i &rarr; E13[8] &rarr; P141 &rarr; E74<br>&rarr; P140i &rarr; E13[8] &rarr; P2 &rarr; E55 ["P15 is influenced by"]</td>
+<td align="left">&rarr; P140i &rarr; E13[139_1] &rarr; P141 &rarr; E74 [139_2]<br>&rarr; P140i &rarr; E13[139_1] &rarr; P2 &rarr; E55 ["P15 is influenced by"] [139_3]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_135_creator</td>
 <td align="left">Creator</td>
 <td align="left">This field is used to indicate the artist or creator of the documented artwork.</td>
-<td align="left">&rarr; P108i &rarr; E12[16]  &rarr; P14 &rarr; E39<br><br>&rarr; P108i &rarr; E12[16]  &rarr; P01 &rarr; PC14[555] &rarr;P02 &rarr; E39</td>
+<td align="left">&rarr; P108i &rarr; E12[58_1]  &rarr; P14 &rarr; E39 [135_1]<br><br>&rarr; P108i &rarr; E12[58_1]  &rarr; P01 &rarr; PC14[135_2] &rarr;P02 &rarr; E39 [135_3]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_136_creator_role</td>
 <td align="left">Creator Role</td>
 <td align="left">This field is used to indicate the role played by the artist or creator in the creation of the documented artwork.</td>
-<td align="left">&rarr; P108i &rarr; E12[10] &rarr; P01 &rarr; PC14[555] &rarr; P14.1 &rarr; E55<br><br>&rarr; P108i &rarr; E12[10] &rarr; P2 &rarr; E55 "Construction"</td>
+<td align="left">&rarr; P108i &rarr; E12[58_1] &rarr; P01 &rarr; PC14[135_1] &rarr; P14.1 &rarr; E55 [136_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_137_current_owner</td>
 <td align="left">Current Owner</td>
 <td align="left">This field is used to indicate the present owner of the documented artwork.</td>
-<td align="left">&rarr; P52 &rarr; E39</td>
+<td align="left">&rarr; P52 &rarr; E39 [137_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_138_current_holder</td>
 <td align="left">Current Holder</td>
 <td align="left">This field is used to indicate the current holder of the documented artwork.</td>
-<td align="left">&rarr; P49 &rarr; E39</td>
+<td align="left">&rarr; P50 &rarr; E39 [138_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -1310,7 +1270,7 @@ classDef Multi fill:#cccccc,stroke:#000000;
 <span class="w">    </span><span class="nn">crm:</span><span class="nt">P108i_was_produced_by</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/event/fie_58_1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="nn">crm:</span><span class="nt">P140i_was_attributed_by</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/event/fie_139_1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="nn">crm:</span><span class="nt">P2_has_type</span><span class="w"> </span><span class="nv">&lt;http://www.srdm.org/type/artwork&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
-<span class="w">    </span><span class="nn">crm:</span><span class="nt">P49_has_former_or_current_keeper</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/actor/fie_138_1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+<span class="w">    </span><span class="nn">crm:</span><span class="nt">P50_current_keeper</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/actor/fie_138_1&gt;</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
 <span class="w">    </span><span class="nn">crm:</span><span class="nt">P52_has_current_owner</span><span class="w"> </span><span class="nv">&lt;https://www.srdm.org/actor/fie_137_1&gt;</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
 
 <span class="nv">&lt;http://www.srdm.org/type/artwork&gt;</span><span class="w"> </span><span class="kt">a</span><span class="w"> </span><span class="nn">crm:</span><span class="nt">E55_type</span><span class="w"> </span><span class="p">.</span><span class="w"></span>
@@ -1357,42 +1317,42 @@ classDef Multi fill:#cccccc,stroke:#000000;
 <td align="left">artwork_90_material</td>
 <td align="left">Material</td>
 <td align="left">This field is used to indicate the material of which the documented instance of artwork consists.</td>
-<td align="left">&rarr; P45 &rarr; E57</td>
+<td align="left">&rarr; P45 &rarr; E57 [90_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_91_technique</td>
 <td align="left">Technique</td>
 <td align="left">This field is used to indicate the technique used in the construction of the documented instance of artwork.</td>
-<td align="left">&rarr; P108i &rarr; E12 &rarr; P32 &rarr; E55<br><br>&rarr; P108i → E12 &rarr; P2 &rarr; E55 "Construction"</td>
+<td align="left">&rarr; P108i &rarr; E12 [58_1]&rarr; P32 &rarr; E55 [91_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_86_dimension_type</td>
 <td align="left">Dimension Type</td>
 <td align="left">This field is used to indicate the type of measurement that the dimension of the documented instance of artwork is.</td>
-<td align="left">&rarr; P39i &rarr; E16 &rarr; P40 &rarr; E54 &rarr; P2 &rarr; E55</td>
+<td align="left">&rarr; P39i &rarr; E16 [86_1]&rarr; P40 &rarr; E54 [86_2] &rarr; P2 &rarr; E55 [86_3]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_87_dimension_value</td>
 <td align="left">Dimension Value</td>
 <td align="left">This field is used to indicate the value of the measurement of the documented instance of artwork.</td>
-<td align="left">&rarr; P39i &rarr; E16 &rarr; P40 &rarr; E54 &rarr; P90 &rarr; xsd:decimal</td>
+<td align="left">&rarr; P39i &rarr; E16 [86_1]&rarr; P40 &rarr; E54 [86_2]&rarr; P90 &rarr; xsd:decimal</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_88_dimension_unit</td>
 <td align="left">Dimension Unit</td>
 <td align="left">This field is used to indicate the unit used to express the value of the measurement of the documented instance of artwork.</td>
-<td align="left">&rarr; P39i &rarr; E16 &rarr; P40 &rarr; E54 &rarr; P91 &rarr; E58</td>
+<td align="left">&rarr; P39i &rarr; E16 [86_1]&rarr; P40 &rarr; E54 [86_2]&rarr; P91 &rarr; E58 [88_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_89_dimension_taker</td>
 <td align="left">Dimension Taker</td>
 <td align="left">This field is used to indicate the actor who undertook the measurement of the documented instance of built work.</td>
-<td align="left">&rarr; P39i &rarr; E16 &rarr; P14 &rarr; E39</td>
+<td align="left">&rarr; P39i &rarr; E16 [86_1]&rarr; P14 &rarr; E39 [89_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -1448,7 +1408,7 @@ classDef Multi fill:#cccccc,stroke:#000000;
 <td align="left">artwork_100_subject</td>
 <td align="left">Subject</td>
 <td align="left">This field is used to indicate the subject of representation of the documented artwork. It is meant to capture general subject areas, not particular individual items represented.</td>
-<td align="left">&rarr; P62 &rarr; E1</td>
+<td align="left">&rarr; P62 &rarr; E1 [100_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -1482,91 +1442,91 @@ classDef Multi fill:#cccccc,stroke:#000000;
 <td align="left">artwork_113_past_ownership_period_statement_-_earliest_date_of_taking_of_possession</td>
 <td align="left">Past Ownership Period Statement - Earliest date of taking of Possession</td>
 <td align="left">This field is used to indicate the earliest date for an ownership period of the documented artwork.</td>
-<td align="left">&rarr; P24i &rarr; E8[16] &rarr; P4 &rarr; E52[17] &rarr; P82a &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P24i &rarr; E8[113_1] &rarr; P4 &rarr; E52[113_2] &rarr; P82a &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_114_past_ownership_period_statement_-_latest_date_of_taking_of_possession</td>
 <td align="left">Past Ownership Period Statement - Latest Date of taking of Possession</td>
 <td align="left">This field is used to indicate the latest date for an ownership period of the documented artwork.</td>
-<td align="left">&rarr; P24i &rarr; E8[16] &rarr; P4 &rarr; E52[17] &rarr; P82b &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P24i &rarr; E8[113-1] &rarr; P4 &rarr; E52[113_2] &rarr; P82b &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_115_past_ownership_period_statement_-_actor_obtaining_ownership</td>
 <td align="left">Past Ownership Period Statement - Actor Obtaining Ownership</td>
 <td align="left">This field is used to indicate the actor holding ownership over the documented artwork during an ownership period.</td>
-<td align="left">&rarr; P24i &rarr; E8[16] &rarr; P22 &rarr; E39</td>
+<td align="left">&rarr; P24i &rarr; E8[113_1] &rarr; P22 &rarr; E39 [115_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_116_past_ownership_period_statement_-_earliest_ceding_of_possession</td>
 <td align="left">Past Ownership Period Statement - Earliest Ceding of Possession</td>
 <td align="left">This field is used to record the earliest possible date for ceding of possession of the documented artwork by some actor.</td>
-<td align="left">&rarr; P24i &rarr; E8[16] &rarr; P115i &rarr; E8[18] &rarr; P4 &rarr; E52[17] &rarr; P82a &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P24i &rarr; E8[113_1] &rarr; P115i &rarr; E8[116_1] &rarr; P4 &rarr; E52[116_2] &rarr; P82a &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_117_past_ownership_period_statement_-_latest_ceding_of_possession</td>
 <td align="left">Past Ownership Period Statement - Latest Ceding of Possession</td>
 <td align="left">This field is used to record the latest possible date for ceding of possession of the documented artwork by some actor.</td>
-<td align="left">&rarr; P24i &rarr; E8[16] &rarr; P115i &rarr; E8[18] &rarr; P4 &rarr; E52[17] &rarr; P82b &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P24i &rarr; E8[113_1] &rarr; P115i &rarr; E8[116_1] &rarr; P4 &rarr; E52[116_2] &rarr; P82b &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_118_past_ownership_period_statement_-_actor_ceding_ownership</td>
 <td align="left">Past Ownership Period Statement - Actor Ceding Ownership</td>
 <td align="left">This field is used to record the actor who has ceded possession of the documented artwork.</td>
-<td align="left">&rarr; P24i &rarr; E8[18] &rarr; P23 &rarr; E39</td>
+<td align="left">&rarr; P24i &rarr; E8[116_1] &rarr; P23 &rarr; E39 [118_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_119_past_ownership_description</td>
 <td align="left">Past Ownership Description</td>
 <td align="left">This field used to provide a free text description related to an ownership period for the documented artwork.</td>
-<td align="left">&rarr; P24i &rarr; E8[16] &rarr; P129i &rarr; E33</td>
+<td align="left">&rarr; P24i &rarr; E8[113_1] &rarr; P129i &rarr; E33 [119_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_107_conservation_event_-_type</td>
 <td align="left">Conservation Event - Type</td>
 <td align="left">This field is used to indicate the type of conservation event performed on the documented artwork.</td>
-<td align="left">&rarr; P31i &rarr; E11[20] &rarr; E55</td>
+<td align="left">&rarr; P31i &rarr; E11[107_1] &rarr; P2 &rarr; E55 [107_2]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_108_conservation_event_-_earliest</td>
 <td align="left">Conservation Event - Earliest</td>
 <td align="left">This field is used to indicate the earliest date for a conservation event performed on the documented artwork.</td>
-<td align="left">&rarr; P31i &rarr; E11[20] &rarr; P4 &rarr; E52[21] &rarr; P82a &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P31i &rarr; E11[107_1] &rarr; P4 &rarr; E52[108_1] &rarr; P82a &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_109_conservation_event_-_latest</td>
 <td align="left">Conservation Event - Latest</td>
 <td align="left">This field is used to indicate the latest date for a conservation event performed on the documented artwork.</td>
-<td align="left">&rarr; P31i &rarr; E11[20] &rarr; P4 &rarr; E52[21] &rarr; P82b &rarr; xsd:dateTime</td>
+<td align="left">&rarr; P31i &rarr; E11[107_1] &rarr; P4 &rarr; E52[108_1] &rarr; P82b &rarr; xsd:dateTime</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_110_conservation_event_-_technique</td>
 <td align="left">Conservation Event - technique</td>
 <td align="left">This field is used to indicate the technique used in the conservation event performed on the documented artwork.</td>
-<td align="left">&rarr; P31i &rarr; E11[21] &rarr; P32 &rarr; E55</td>
+<td align="left">&rarr; P31i &rarr; E11[107_1] &rarr; P32 &rarr; E55 [110_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_111_conservator</td>
 <td align="left">Conservator</td>
 <td align="left">This field is used to indicate the actor the carried out the conservation event performed on the documented artwork.</td>
-<td align="left">&rarr; P31i &rarr; E11[21] &rarr; P14 &rarr; E21</td>
+<td align="left">&rarr; P31i &rarr; E11[107_1] &rarr; P14 &rarr; E21 [111_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_112_conservation_event_description</td>
 <td align="left">Conservation Event Description</td>
 <td align="left">This field used to provide a free text description related to the conservation event performed on the documented artwork.</td>
-<td align="left">&rarr; P31i &rarr; E11[21] &rarr; P129i &rarr; E33</td>
+<td align="left">&rarr; P31i &rarr; E11[107_1] &rarr; P129i &rarr; E33 [112_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -1644,21 +1604,21 @@ classDef Multi fill:#cccccc,stroke:#000000;
 <td align="left">artwork_199_location_-_institution</td>
 <td align="left">Location - Institution</td>
 <td align="left">This field is used to document the institution at which the documented artwork is presently located.</td>
-<td align="left">&rarr; P53 &rarr; E53[24] &rarr; P74i &rarr; E74[25]<br><br>&rarr; p53 &rarr; E53[24] &rarr; P74i &rarr; E74[25] &rarr; P2 &rarr; E55["Institution"]<br><br>&rarr; p53 &rarr; E53[24] &rarr; P2 &rarr; E55 "Institutional Location"</td>
+<td align="left">&rarr; P53 &rarr; E53[199_1] &rarr; P74i &rarr; E74[192_1]<br><br>&rarr; p53 &rarr; E53[199_1] &rarr; P74i &rarr; E74[192_1] &rarr; P2 &rarr; E55["Institution"] [192_3]<br><br>&rarr; p53 &rarr; E53[199_1] &rarr; P2 &rarr; E55 "Institutional Location" [192_4]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_177_location_-_institution_address</td>
 <td align="left">Location - Institution Address</td>
 <td align="left">This field is used to document the address of the institution at which the documented artwork is presently located.</td>
-<td align="left">&rarr; P53 &rarr; E53[22] &rarr; P1 &rarr; E41<br><br>P53 &rarr; E53[22] &rarr; P1 &rarr; E41 &rarr; P2 &rarr; E55 "Address"</td>
+<td align="left">&rarr; P53 &rarr; E53[177_1] &rarr; P1 &rarr; E41 [177_2]<br><br>P53 &rarr; E53[177_1] &rarr; P1 &rarr; E41 [177_2]&rarr; P2 &rarr; E55 "Address" [177_3]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_178_location_-_coordinates</td>
 <td align="left">Location - coordinates</td>
 <td align="left">This field is used to indicate the coordinates for the institution at which the documented artwork is presently located.</td>
-<td align="left">&rarr; P53 &rarr; E53[22] &rarr; P168 &rarr; geo:wktLiteral</td>
+<td align="left">&rarr; P53 &rarr; E53[177_1] &rarr; P168 &rarr; geo:wktLiteral</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -1716,21 +1676,21 @@ classDef Multi fill:#cccccc,stroke:#000000;
 <td align="left">artwork_171_right_holder</td>
 <td align="left">Right Holder</td>
 <td align="left">This field is used to indicate the right holder for the documented artwork.</td>
-<td align="left">&rarr; P104 &rarr; E30[25] &rarr; P105 &rarr; E39</td>
+<td align="left">&rarr; P104 &rarr; E30[171_1] &rarr; P105 &rarr; E39 [171_2]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_172_right_type</td>
 <td align="left">Right Type</td>
 <td align="left">This field is used to indicate the type of right which the right holder holds over the documented artwork.</td>
-<td align="left">&rarr; P104 &rarr; E30[25] &rarr; P2 &rarr; E55</td>
+<td align="left">&rarr; P104 &rarr; E30[171_1] &rarr; P2 &rarr; E55 [172_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_173_right_description</td>
 <td align="left">Right Description</td>
 <td align="left">This field is used to provide a free text description of the right which the right holder holds over the documented artwork.</td>
-<td align="left">&rarr; P104 &rarr; E30[25] &rarr; P129i &rarr; E73[666]</td>
+<td align="left">&rarr; P104 &rarr; E30[171_1] &rarr; P129i &rarr; E73[173_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
@@ -1773,28 +1733,28 @@ classDef Multi fill:#cccccc,stroke:#000000;
 <td align="left">artwork_196_citation</td>
 <td align="left">Citation</td>
 <td align="left">This field is used to indicate bibliographic records that stand as reference documentation for the documented artwork.</td>
-<td align="left">&rarr; P129i &rarr; E33[22] &rarr; rdf:value &rarr; rdf:Literal &rarr; P129i &rarr; E73[22] &rarr; P2 &rarr; E55 "Citation"</td>
+<td align="left">&rarr; P129i &rarr; E33[196_1] &rarr; rdf:value &rarr; rdf:Literal &rarr; P129i &rarr; E73[196_1] &rarr; P2 &rarr; E55 "Citation"</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_197_citation_source</td>
 <td align="left">Citation Source</td>
 <td align="left">This field is used to record the source used for generating the citation for the documented artwork.</td>
-<td align="left">&rarr; P129i &rarr; E33[22] &rarr; P106i &rarr; E33 [from BibliograPhy Entity Type]</td>
+<td align="left">&rarr; P129i &rarr; E33[196_1] &rarr; P106i &rarr; E33 [from BibliograPhy Entity Type] [197_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_195_image</td>
 <td align="left">Image</td>
 <td align="left">This field document image that reference the described artwork.</td>
-<td align="left">&rarr; P138i &rarr; E36/D9</td>
+<td align="left">&rarr; P138i &rarr; E36/D9 [195_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 <tr>
 <td align="left">artwork_204_same_as</td>
 <td align="left">Same As</td>
 <td align="left">The field is used to record the sameness between the entity described and an external authority</td>
-<td align="left">&rarr; L54 &rarr; E1</td>
+<td align="left">&rarr; L54 &rarr; E1 [204_1]</td>
 <td align="left">Swiss Art Research Infrastructure</td>
 </tr>
 </tbody>
