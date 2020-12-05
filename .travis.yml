@@ -25,7 +25,6 @@ install:
 - pip install mkdocs-git-revision-date-localized-plugin
 - pip install mkdocs-table-reader-plugin
 - npm install @mermaid-js/mermaid-cli
-- ./node_modules/.bin/mmdc -h
 - git clone https://github.com/g-provost/lightgallery-markdown.git
 - cd lightgallery-markdown
 - python setup.py install
