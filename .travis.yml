@@ -12,6 +12,11 @@ install:
 - pip install mkdocs
 - pip install mkdocs-material
 - pip install rdflib
+- pip install csvkit
+- pip install requests
+- pip install mkdocs-macros-plugin
+- pip install mkdocs-git-revision-date-localized-plugin
+- pip install mkdocs-table-reader-plugin
 - git clone https://github.com/g-provost/lightgallery-markdown.git
 - cd lightgallery-markdown
 - python setup.py install
@@ -19,6 +24,7 @@ install:
 
 script:
 - git clean -f -d -x
+- git clone https://github.com/chin-rcip/CRITERIA.git 
 - cd docs/et/artworkCSV
 - bash artwork.sh
 
