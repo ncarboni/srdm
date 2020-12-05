@@ -16,11 +16,12 @@ install:
 - cd lightgallery-markdown
 - python setup.py install
 - cd ..
-- cd docs/et/artworkCSV
-- "./artwork.sh"
-- cd ..
+
 script:
 - git clean -f -d -x
+- cd docs/et/artworkCSV
+- bash artwork.sh
+
 after_success:
 - git config user.name "Nicola Carboni"
 - git config user.email "nicola@carboni.me"
