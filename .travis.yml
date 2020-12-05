@@ -11,6 +11,7 @@ install:
 - pip install pymdown-extensions
 - pip install mkdocs
 - pip install mkdocs-material
+- pip install airscraper
 - pip install rdflib
 - pip install csvkit
 - pip install requests
@@ -26,6 +27,7 @@ install:
 script:
 - git clean -f -d -x
 - git clone https://github.com/chin-rcip/CRITERIA.git docs/et/CRITERIA
+- git clone https://github.com/banditelol/airscraper.git docs/et/airscraper/airscraper
 - cd docs/et/artworkCSV
 - bash artwork.sh
 
