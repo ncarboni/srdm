@@ -54,7 +54,7 @@ script:
 - bash person.sh
 - cd ../placeCSV
 - bash place.sh
-- cd cd ../../../
+- cd ../../../
 
 
 after_success:
