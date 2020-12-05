@@ -38,7 +38,6 @@ The attribution of names and types to persons is a basic human activity. A chief
 
 {{ read_csv('docs/et/personCSV/Person_Names_and_Classification.csv') }}
 
-
 The model provides means for tracking identifiers, present and past name use, titles and gender.
 
 ![!](personCSV/ttl/mmd/png/Person_Names_and_Classification.png)

@@ -1,9 +1,11 @@
 language: python
+
 branches: main
 services:
 - docker
 before_install:
-- docker pull minlag/mermaid-cli
+- docker pull minlag/mermaid-cli:8.7.0  
+
 install:
 - pip install markdown
 - pip install pymdown-extensions
