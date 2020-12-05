@@ -1,30 +1,31 @@
+env:
+  global:
+    - secure: hruo9K42RCNB4BV/uPzKw7iLMsq9OxWwcpbJi0KPkpcHM6zgoxiyESAmo2YYR7A3HSXq1ewFN3nrLRRzw+J25nn0ZifZjmbO6RawguQDyeDKlMdXnabvz3mx0k4rL/mkHIQEuDWGyrwuLfUFmBs5TucNIDLy0Oxt2jwRWQspPB76VMFcOLmNc+mnchwcjONH4MB2cBXFX/b+6EXIvLT3ERIcaL5zfMeCQKlpxjpTFv+gZnrZoQ+cXFThIsxCs1Zk6CPFCHqbQipe3iIaY9qPILtd3JH1lH9Z19gGUxCSxcMO7F18IVf8uAs3EExX8M9HRji5Jyrz+aJEMnEG4Z2B7CE68HPkmxLRaUcAYVer5NMQqVAkKrdghe1dHbvLYXXDsTbIPwsyCDXusctzdOBj1Xf85gYOnEWgZUMRhzF3DtZR4/2nRdfLhOPsa4820OJooShBrBrCihnEKJV7ioFhYBdv70BNoGcBGq1kT21DJRP+FfO7g46Hz2ak9RLBRtEYkpfMUNph3fgsu6gM6YoyCJIUsDXrld6AxDDIOAA9zMQ9q/vaf+oGwpC82Oi3B0WE+p15DE0p9uo0i8kdox6jDDVRRIntTozs6dCTmXIJe1vjU0i6bbHAB6usC36OUeIkSxA2DaFBXt/jiG5ChTvgdUPlcjjXEKECG2ybakPVCTw=
 
-language: python # Set the build language to Python
 
-python: 3.6 # python version
-
-branches: master # Set the branch to build from
-
+language: python
+python: 3.6
+branches: master
 install:
-    - pip install markdown
-    - pip install pymdown-extensions
-    - pip install mkdocs # Install the required dependencies
-    - pip install mkdocs-material
-    - pip install rdflib
-    - git clone https://github.com/g-provost/lightgallery-markdown.git
-    - cd lightgallery-markdown
-    - python setup.py install
-    - cd ..
-    - cd docs/et/artworkCSV
-    - ./artwork.sh
-    - cd ..
-
-    
+- pip install markdown
+- pip install pymdown-extensions
+- pip install mkdocs
+- pip install mkdocs-material
+- pip install rdflib
+- git clone https://github.com/g-provost/lightgallery-markdown.git
+- cd lightgallery-markdown
+- python setup.py install
+- cd ..
+- cd docs/et/artworkCSV
+- "./artwork.sh"
+- cd ..
 script:
-  - git clean -f -d -x
+- git clean -f -d -x
 after_success:
-  - git config user.name "Nicola Carboni"
-  - git config user.email "nicola@carboni.me"
-  - git remote add gh-token "https://${GH_TOKEN}@github.com/ncarboni/srdm.git";
-  - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
-  - mkdocs gh-deploy -v --clean --remote-name gh-token;
+- git config user.name "Nicola Carboni"
+- git config user.email "nicola@carboni.me"
+- git remote add gh-token "https://${GH_TOKEN}@github.com/ncarboni/srdm.git";
+- git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
+- mkdocs gh-deploy -v --clean --remote-name gh-token;
+-deploy:
+  provider: pages
