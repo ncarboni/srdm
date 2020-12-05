@@ -63,7 +63,7 @@ plugins:
   - table-reader
   - git-revision-date-localized
   - tooltipster-links
-  - mermaid2
+#  - mermaid2
 #  - pheasant
 #  - macros
 #  - mkdocs-versioning:
@@ -83,17 +83,16 @@ markdown_extensions:
   - markdown.extensions.attr_list
   - pymdownx.superfences:
       # make exceptions to highlighting of code:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:mermaid2.fence_mermaid
+#      custom_fences:
+#        - name: mermaid
+#          class: mermaid
+#          format: !!python/name:mermaid2.fence_mermaid
   - pymdownx.details
   - pymdownx.tabbed
   - pymdownx.details
   - pymdownx.escapeall
   - pymdownx.smartsymbols
   - pymdownx.snippets
-
   - toc:
         permalink: true
   - codehilite:
