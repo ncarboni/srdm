@@ -37,9 +37,11 @@ after_success:
 - git remote add gh-token "https://${GH_TOKEN}@github.com/ncarboni/srdm.git";
 - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
 - mkdocs gh-deploy -v --clean --remote-name gh-token;
--deploy:
+
+deploy:
   provider: pages
-  skip_cleanup: true
+## skip_cleanup is now default in deployment-v2 - https://docs.travis-ci.com/user/deployment-v2
+#  skip_cleanup: true
   github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   on:
