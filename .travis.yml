@@ -5,7 +5,7 @@ env:
 
 language: python
 python: 3.6
-branches: master
+branches: main
 install:
 - pip install markdown
 - pip install pymdown-extensions
