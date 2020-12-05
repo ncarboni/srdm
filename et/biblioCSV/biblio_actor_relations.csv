@@ -1,4 +1,0 @@
-identifier,Model Specific Name,Description,CRM Path,used by
-bibliographic entity_142_publisher,Publisher,This field is used to record the publisher of the bibliographic item.,"--> R24i--> F30[9] --> P01--> PC14[11] --> P02--> E39 --> R24i--> F30[7] --> P01--> PC14[11] --> P14.1--> E55""Publisher""",Swiss Art Research Infrastructure
-bibliographic entity_140_author,Author,"This field is used to record authors, contributors and other producers of the content of the bibliographic item.",--> R24i--> F30[9] --> P01--> PC14[11] --> P02--> E39,Swiss Art Research Infrastructure
-bibliographic entity_141_authorship_role,Authorship Role,"This field is used to record the role of the author, contributor and other producers of content of the bibliographic item.",--> R24i--> F30[9] --> P01--> PC14[11] --> P14.1--> E55,Swiss Art Research Infrastructure

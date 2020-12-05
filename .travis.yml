@@ -1,0 +1,30 @@
+
+language: python # Set the build language to Python
+
+python: 3.6 # python version
+
+branches: master # Set the branch to build from
+
+install:
+    - pip install markdown
+    - pip install pymdown-extensions
+    - pip install mkdocs # Install the required dependencies
+    - pip install mkdocs-material
+    - pip install rdflib
+    - git clone https://github.com/g-provost/lightgallery-markdown.git
+    - cd lightgallery-markdown
+    - python setup.py install
+    - cd ..
+    - cd docs/et/artworkCSV
+    - ./artwork.sh
+    - cd ..
+
+    
+script:
+  - git clean -f -d -x
+after_success:
+  - git config user.name "Nicola Carboni"
+  - git config user.email "nicola@carboni.me"
+  - git remote add gh-token "https://${GH_TOKEN}@github.com/ncarboni/srdm.git";
+  - git fetch gh-token && git fetch gh-token gh-pages:gh-pages;
+  - mkdocs gh-deploy -v --clean --remote-name gh-token;

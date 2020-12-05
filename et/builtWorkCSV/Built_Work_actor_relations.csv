@@ -1,5 +1,0 @@
-identifier,Model Specific Name,Description,CRM Path,used by
-builtwork_135_creator,Creator,This field is used to record the creator of the documented physical object.,--> P108i --> E12[16]  --> P14 --> E39<br><br>--> P108i --> E12[16]  --> P01 --> PC14[555] -->P02 --> E39,Swiss Art Research Infrastructure
-builtwork_136_creator_role,Creator Role,This field is used to record the role played by the creator in the production of the documented physical object.,"--> P108i --> E12[10] --> P01 --> PC14[555] --> P14.1 --> E55<br><br>--> P108i --> E12[10] --> P2 --> E55 ""Construction""",Swiss Art Research Infrastructure
-builtwork_137_current_owner,Current Owner,This field is used to record the present owner of the documented physical object.,--> P52 --> E39,Swiss Art Research Infrastructure
-builtwork_139_style_-_movement,Style - Movement,This field is used to record an artistic movement to which the documented object is associated because of its style.,"--> P140i --> E13[8] --> P141 --> E74<br>--> P140i --> E13[8] --> P2 --> E55 [""P15 is influenced by""]",Swiss Art Research Infrastructure
